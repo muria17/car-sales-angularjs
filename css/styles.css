@@ -10,6 +10,10 @@ body {
     height: 55vh;
 }
 
+.containers {
+    display: flex;
+}
+
 .box-login {
     position: absolute; /* Permite que o box-login seja posicionado em relação ao contêiner */
     top: 80%; /* Posiciona o box-login logo abaixo do contêiner */
@@ -89,7 +93,7 @@ body {
     border: 0px solid #161515; 
     margin: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: adiciona uma sombra */
-    font-size: 1rem;
+    font-size: 20px;
     position: relative;
 
 }
@@ -102,6 +106,9 @@ body {
     width: 100%;
     text-align: center;
     font-family: Arial;
+    font-style: white;
+    color:#eff1f1;
+
 }
 .btn, .btn-2 {
     display: block; /* Faz com que os itens fiquem um abaixo do outro */
@@ -110,7 +117,7 @@ body {
     color: rgb(7, 7, 7);
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 20px;
     cursor: pointer;
     text-align: center; /* Centraliza o conteúdo dentro dos botões */
 }
@@ -164,12 +171,12 @@ body {
 }
 .text1 p {
     margin: 0; /* Remove margens extras ao redor do texto */
-    font-size: 1rem; /* Tamanho do texto */
+    font-size: 5rem; /* Tamanho do texto */
     color: black; /* Cor do texto */
 }
 .ad-item p {
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 25px;
     color: #333;
 }
 
