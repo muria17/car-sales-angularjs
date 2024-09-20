@@ -1,10 +1,10 @@
-app.factory('websitebasic', ['$http', function($http) {
+app.factory('login', ['$http', function($http) {
     var service = {};
 
-    service.getCarStock = function() {
-        return $http.get('http://localhost:8080/carStock')
+    service.validPassword = function(loginData) {
+        return $http.post('http://localhost:8080/userAccount', loginData)
             .then(function(response) {
-                return response; 
+                return response;  
             }, function(error) {
                 console.error('Erro na requisição ao backend:', error);
                 return error;  

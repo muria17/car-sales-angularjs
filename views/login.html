@@ -3,8 +3,8 @@
  <div class="box-login" ng-controller="LoginController">
     <h1>Sign in to Car Sales</h1>
     <div>
-        <input type="text" placeholder="Username" ng-model="loginData.username" />
-        <input type="password" placeholder="Password" ng-model="loginData.password" />
+        <input type="text" placeholder="Username" ng-model="loginData.login" />
+        <input type="password" placeholder="Password" ng-model="loginData.userAccountPassword" />
         <button ng-click="redirectToPage()">Sign in</button>
         <p ng-show="errorMessage">{{errorMessage}}</p>
         </div>
