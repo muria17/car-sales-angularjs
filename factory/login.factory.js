@@ -2,7 +2,7 @@ app.factory('login', ['$http', function($http) {
     var service = {};
 
     service.validPassword = function(loginData) {
-        return $http.post('http://localhost:8080/userAccount', loginData)
+        return $http.post('https://carsales-production.up.railway.app/userAccount', loginData)
             .then(function(response) {
                 return response;  
             }, function(error) {

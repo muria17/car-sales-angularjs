@@ -2,7 +2,7 @@ app.factory('websitebasic', ['$http', function($http) {
     var service = {};
 
     service.getCarStock = function() {
-        return $http.get('http://localhost:8080/carStock')
+        return $http.get('https://carsales-production.up.railway.app/carStock')
             .then(function(response) {
                 return response; 
             }, function(error) {
