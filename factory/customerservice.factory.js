@@ -3,7 +3,7 @@ angular.module('myApp')
     var service = {};
 
     service.getCustomers = function() {
-        return $http.get('https://carsales-production.up.railway.app/client'); 
+        return $http.get('https://carsales-production.up.railway.app/client' ); 
     };
 
     return service;
