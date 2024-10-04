@@ -15,6 +15,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'views/customer.html',  // Página que será carregada após login
         controller: 'CustomerController'
     })
+    .when('/userregistration', {
+        templateUrl: 'views/userregistration.html',  // Página que será carregada após login
+        controller: 'UserRegistrationController'
+    })
     .otherwise({
         redirectTo: '/login'  // Redireciona para login como padrão
     });

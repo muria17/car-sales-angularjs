@@ -32,6 +32,10 @@ angular.module('myApp') // Injete o módulo existente
             $scope.loading = false; 
         });
     };
+
+    $scope.userRegistration = function(){
+        $location.path('/userregistration'); 
+    };
 }]);
 
 
