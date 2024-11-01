@@ -3,10 +3,13 @@
  <div class="box-login" ng-controller="UserRegistrationController">
     <h1>Register new User</h1>
     <div class="form-login">
-        <input type="text" placeholder="Username" ng-model="Data.login" />
-        <input type="password" placeholder="Password" ng-model="Data.userAccountPassword" />
+        <input type="text" placeholder="Username" ng-model="data.login" />
+        <input type="password" placeholder="Password" ng-model="data.userAccountPassword" />
+        <input type="number" placeholder="Customer" ng-model="data.customerId" />
         <button ng-click="validateData()">Register</button>
-        <p ng-show="errorMessage">{{errorMessage}}</p>
+        <p ng-show="errorMessage" ng-if="errorMessage">{{errorMessage}}</p>
+        <p ng-show="successMessage" ng-if="successMessage">{{successMessage}}</p>
+
         </div>
     </div>
 
