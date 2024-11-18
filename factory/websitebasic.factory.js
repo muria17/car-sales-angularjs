@@ -6,10 +6,26 @@ app.factory('websitebasic', ['$http', function($http) {
             .then(function(response) {
                 return response; 
             }, function(error) {
-                console.error('Erro na requisição ao backend:', error);
                 return error;  
             });
     };
 
+    service.saveAds = function(newAds) {
+        return $http.post('https://carsales-production.up.railway.app/carStock' , newAds)
+            .then(function(response) {
+                return response;  
+            }, function(error) {
+                return error;  
+            });
+    };
+
+    service.deleteAds = function(AdsId) {
+        return $http.delete('https://carsales-production.up.railway.app/carStock/' + AdsId)
+            .then(function(response) {
+                return response;  
+            }, function(error) {
+                return error;  
+            });
+    };
     return service;
 }]);
