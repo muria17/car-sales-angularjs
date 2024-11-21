@@ -4,10 +4,8 @@ app.factory('login', ['$http', function($http) {
     service.validPassword = function(loginData) {
         return $http.post('https://carsales-production.up.railway.app/userAccount/validUserAndPassword' , loginData)
             .then(function(response) {
-                console.log("Dados enviados para validação:", loginData);
                 return response;  
             }, function(error) {
-                console.error('Erro na requisição ao backend:', error);
                 return error;  
             });
     };
