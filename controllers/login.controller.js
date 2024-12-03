@@ -1,8 +1,7 @@
-// controllers/login.controller.js
-angular.module('myApp') // Injete o módulo existente
+angular.module('myApp') 
 .controller('LoginController', ['$scope', '$location','$rootScope', 'login', function($scope, $location, $rootScope, login) {
 
-    $scope.loginData = {};  // Objeto para armazenar username e password
+    $scope.loginData = {}; 
     $scope.errorMessage = '';
 
     $scope.redirectToPage = function() {

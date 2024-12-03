@@ -11,7 +11,7 @@ app.controller('CustomerController', ['$scope', '$location', 'CustomerService', 
                 $scope.customers = response.data;
             })
             .catch(function(error) {
-                console.error('Erro ao obter dados dos clientes:', error);
+                $scope.errorMessage = '*Erro ao obter dados dos clientes.';
             })
             .finally(function() {
                 $scope.loading = false;
@@ -72,8 +72,6 @@ app.controller('CustomerController', ['$scope', '$location', 'CustomerService', 
             $scope.loading = false; 
 
         });
-};
-
-
+    };
 }]);
 

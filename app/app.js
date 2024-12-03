@@ -8,18 +8,18 @@ app.config(['$routeProvider', function($routeProvider) {
         controller: 'LoginController'
     })
     .when('/websitebasic', {
-        templateUrl: 'views/websitebasic.html',  // Página que será carregada após login
+        templateUrl: 'views/websitebasic.html',  
         controller: 'WebsiteBasicController'
     })
     .when('/customer', {
-        templateUrl: 'views/customer.html',  // Página que será carregada após login
+        templateUrl: 'views/customer.html',  
         controller: 'CustomerController'
     })
     .when('/userregistration', {
-        templateUrl: 'views/userregistration.html',  // Página que será carregada após login
+        templateUrl: 'views/userregistration.html',  
         controller: 'UserRegistrationController'
     })
     .otherwise({
-        redirectTo: '/login'  // Redireciona para login como padrão
+        redirectTo: '/login'  
     });
 }]);

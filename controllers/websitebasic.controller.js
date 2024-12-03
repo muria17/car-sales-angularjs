@@ -16,7 +16,7 @@ app.controller('WebsiteBasicController', ['$scope', '$location','websitebasic', 
                 $scope.carStock = response.data;
             })
             .catch(function(error) {
-                console.error('Erro ao obter dados dos clientes:', error);
+                $scope.errorMessage = '*Erro ao obter dados dos anuncios.';
             })
             .finally(function() {
                 $scope.loading = false;

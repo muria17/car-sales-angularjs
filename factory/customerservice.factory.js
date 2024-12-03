@@ -3,11 +3,11 @@ angular.module('myApp')
     var service = {};
 
     service.getCustomers = function() {
-        return $http.get('https://carsales-production.up.railway.app/client' ); 
+        return $http.get('http://localhost:8080/client' ); 
     };
 
     service.saveCustomer = function(newCustomer) {
-        return $http.post('https://carsales-production.up.railway.app/client' , newCustomer)
+        return $http.post('http://localhost:8080/client' , newCustomer)
             .then(function(response) {
                 return response;  
             }, function(error) {
@@ -16,7 +16,7 @@ angular.module('myApp')
     };
 
     service.deleteCustomer = function(customerId) {
-        return $http.delete('https://carsales-production.up.railway.app/client/' + customerId)
+        return $http.delete('http://localhost:8080/client/' + customerId)
             .then(function(response) {
                 return response;  
             }, function(error) {
